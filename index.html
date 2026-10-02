@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Supermania Carrom</title>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#3a0c0c">
+<link rel="icon" href="icon-192.png"><link rel="apple-touch-icon" href="icon-192.png">
+<!-- version: 2 (change on every release so the update check notices) -->
+<script>var V=Date.now();document.write('<link rel="stylesheet" href="style.css?v='+V+'">')</script>
+</head><body>
+<main id="app">
+<section class="sc" id="home">
+ <img id="logo" src="home-logo.png" alt="" onerror="this.remove()">
+ <h2>Supermania Carrom</h2>
+ <button class="btn p" id="pnp">🎯 Pass N Play</button>
+ <p class="hint">Flick with your index or middle finger only. No thumb strikes. 3 sets per match.</p>
+ <button class="btn" id="install" hidden>⬇ Install app</button>
+ <p class="hint" id="ios" hidden>On iPhone: tap Share, then Add to Home Screen.</p>
+ <p class="hint">Made by <b>Supermania Games</b> · Presented by <b>Boring Games</b></p>
+</section>
+<section class="sc" id="game" hidden>
+ <div id="top">
+  <div class="pl" id="c0"></div>
+  <div id="mid"></div>
+  <div class="pl r" id="c1"></div>
+ </div>
+ <canvas id="cv" width="1480" height="1480"></canvas>
+ <div id="msg"></div>
+ <input type="range" id="sl" min="0" max="100" value="50" aria-label="Slide the striker">
+ <div id="foot"><button class="rb" id="mute" aria-label="Sound on or off">🔊</button><span class="hint">Slide the striker, then draw back on the board to set power</span><button class="rb" id="menu" aria-label="Menu">☰</button></div>
+ <div id="pwr"><i id="pw"></i></div>
+</section>
+</main>
+<div id="dlg" hidden><div class="rbox"><div class="rtitle" id="dt"></div><p id="dp"></p><div class="rbtns"><button class="btn p" id="dok">OK</button></div></div></div>
+<script>document.write('<script src="main.js?v='+V+'"><\/script>')</script>
+</body></html>

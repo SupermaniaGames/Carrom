@@ -1,0 +1,17 @@
+{
+ "id": "supermania-carrom-app",
+ "name": "Supermania Carrom",
+ "short_name": "Carrom",
+ "description": "Carrom with real physics. Made by Supermania Games, presented by Boring Games.",
+ "start_url": "./?source=pwa",
+ "scope": "./",
+ "display": "standalone",
+ "orientation": "portrait",
+ "background_color": "#3a0c0c",
+ "theme_color": "#3a0c0c",
+ "icons": [
+  {"src":"icon-192.png","sizes":"192x192","type":"image/png","purpose":"any"},
+  {"src":"icon-512.png","sizes":"512x512","type":"image/png","purpose":"any"},
+  {"src":"icon-maskable-512.png","sizes":"512x512","type":"image/png","purpose":"maskable"}
+ ]
+}
