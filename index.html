@@ -5,13 +5,15 @@
 <link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#3a0c0c">
 <link rel="icon" href="icon-192.png"><link rel="apple-touch-icon" href="icon-192.png">
-<!-- version: 2 (change on every release so the update check notices) -->
+<!-- version: 4 (change on every release so the update check notices) -->
 <script>var V=Date.now();document.write('<link rel="stylesheet" href="style.css?v='+V+'">')</script>
 </head><body>
 <main id="app">
 <section class="sc" id="home">
  <img id="logo" src="home-logo.png" alt="" onerror="this.remove()">
  <h2>Supermania Carrom</h2>
+ <div class="seg" id="lv"><button data-v="0">Easy</button><button data-v="1" class="on">Medium</button><button data-v="2">Hard</button><button data-v="3">Expert</button></div>
+ <button class="btn p" id="bot">🤖 Play vs Computer</button>
  <button class="btn p" id="pnp">🎯 Pass N Play</button>
  <p class="hint">Flick with your index or middle finger only. No thumb strikes. 3 sets per match.</p>
  <button class="btn" id="install" hidden>⬇ Install app</button>

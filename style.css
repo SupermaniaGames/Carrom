@@ -35,3 +35,14 @@ input[type=range]::-moz-range-thumb{width:34px;height:34px;border-radius:50%;bac
 .rbox{width:min(92vw,400px);background:linear-gradient(#7a2a24,#3a0c0c);border:4px solid #ffc21a;border-radius:20px;padding:18px;box-shadow:0 0 30px #ffc21a88;text-align:center}
 .rtitle{font-size:1.6rem;font-weight:900;color:#ffd54a;margin-bottom:10px}
 .rbtns{display:flex;gap:10px;margin-top:14px}
+
+.seg{display:flex;gap:6px;width:100%}
+.seg button{flex:1;font:inherit;font-weight:800;padding:10px 2px;border-radius:12px;border:3px solid #ffffff44;background:#4a1210;color:#fff;cursor:pointer}
+.seg button.on{border-color:#ffc21a;background:#ffc21a;color:#4a1210}
+.pl .av{background:linear-gradient(#fff,#ddd);border:0;box-shadow:0 0 0 3px #e8a838,0 0 0 5px #7a4b00,0 5px 8px #0009}
+#cv{border:7px solid #6b3f22;box-shadow:0 0 0 3px #e8a838,0 0 0 5px #4a2a10,0 14px 30px #000b,inset 0 0 20px #0006}
+body{background:radial-gradient(circle at 50% 20%,#b24a40,#5a1414 55%,#220505),repeating-linear-gradient(45deg,#ffffff06 0 14px,transparent 14px 28px);background-blend-mode:normal}
+
+html,body{overscroll-behavior:none;height:100%}
+body{overflow:hidden;min-height:0}
+#game,#cv{touch-action:none;-webkit-user-select:none;user-select:none}
